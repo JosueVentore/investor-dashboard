@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --border: 214.3 31.8% 91.4%;
+
+  /* Chart palette (HSL) */
+  --chart-1: 262 83% 58%;
+  --chart-2: 142 71% 45%;
+  --chart-3: 38 92% 50%;
+  --chart-4: 0 84% 60%;
+  --chart-5: 199 89% 48%;
+  --chart-6: 291 84% 60%;
+  --chart-7: 24 95% 53%;
+}
+
+.dark {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+
+  /* Slightly brighter for dark mode */
+  --chart-1: 262 90% 72%;
+  --chart-2: 142 70% 55%;
+  --chart-3: 38 95% 62%;
+  --chart-4: 0 90% 70%;
+  --chart-5: 199 92% 62%;
+  --chart-6: 291 90% 74%;
+  --chart-7: 24 95% 66%;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+* {
+  border-color: hsl(var(--border));
+}
